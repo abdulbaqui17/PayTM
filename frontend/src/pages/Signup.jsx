@@ -24,7 +24,7 @@ export const Signup=()=>{
                 <Input placeholder={"email@gmail.com"} onChange={e=>{setEmail(e.target.value)}}/>
                 <Input placeholder={"password"} onChange={e=>{setPassword(e.target.value)}}/>
                 <Button text={"Sign up"} onClick={async()=>{
-                   const response= await axios.post("http://localhost:3000/api/v1/user/signup",{
+                   const response= await axios.post("https://pay-tm-chi.vercel.app/api/v1/user/signup",{
                         fname,
                         lname,
                         username,

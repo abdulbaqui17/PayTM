@@ -8,7 +8,7 @@ export const Dashboard = () => {
     const [balance,setBalance]=useState(null)
     useEffect(()=>{
         const fetchBalance=async()=>{
-            const response=await axios.get("http://localhost:3000/api/v1/account/balance",{
+            const response=await axios.get("https://pay-tm-chi.vercel.app/api/v1/account/balance",{
                 headers:{
                     Authorization:"Bearer "+localStorage.getItem("token")
                 }  
